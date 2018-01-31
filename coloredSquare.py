@@ -15,11 +15,11 @@ yellowline = LineStyle(3,yellow)
 rancol = randint(1,4)
 if rancol == 1:
     rectangle = RectangleAsset(100,100,redline,red)
-if rancol == 2:
+elif rancol == 2:
     rectangle = RectangleAsset(100,100,blueline,blue)
-if rancol == 3:
+elif rancol == 3:
     rectangle = RectangleAsset(100,100,greenline,green)
-if rancol == 4:
+elif rancol == 4:
     rectangle = RectangleAsset(100,100,yellowline,yellow)
 
 Sprite (rectangle)
