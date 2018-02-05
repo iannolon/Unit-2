@@ -2,10 +2,12 @@
 #1/29/18
 #adventure.py
 
+#Initial choices, shown at the beginning of each adventure
 print('You wake up in the middle of a desert. You look around you. To the north, if you squint, you can see a town. To the east, far away, there are tall, snow capped mountains. To the south, behind you, the land seems to stop suddenly. It might be a cliff. To the west, you can see a long, winding road, that goes past the horizon.')
 print(' ')
 print('Press 1 to go north, 2 to go east, 3 to go south, 4 to go west, and 5 to stay here.')
 direc = int(input('Which way do you go?'))
+#town dialogue starts
 if direc == 1:
     print(' ')
     print('You start walking to the north. It takes almost a full day, and as the sun is setting, you stumble up to the gates. There are guards standing at the gates.')
@@ -21,7 +23,27 @@ if direc == 1:
     elif town1 == 2:
         print(' ')
         print('The guards are intimidating, but not all that intelligent. They let you inside the city.')
-        print('This path is incomplete. Sorry.')
+        print(' ')
+        #inside town dialogue starts
+        print('You walk into the city. It\'s a pretty shabby looking town; most of the houses are shabby and the streets are filled with people in rags. However, in the middle of the city one building stands tall over all the others. You ask the guards what it is and they tell you it\'s the mayor\'s house. Press 1 to go to the mayor\'s house and 2 to keep walking around the town.')
+        town2 = int(input('What do you do?'))
+        if town2 == 1:
+            print(' ')
+            print('The guards escort you to the mayor\'s house. You wait for a little in his lobby, but then he beckons you into his room.')
+            print('"Ah, so you\'ve gotten here finally. You must be starving. Luckily, I have a job for you. The elections for mayor are coming up, and I want to remain in my position. However, there\'s another candidate running against me that I think has a chance. If he were to meet with an... accident, then that would be most fortunate indeed. I\'m sure you\'re clever enough to arrange something, no? Because if you do, my generosity has been praised throughout the lands and you would have a splendid living in this town. A minor lordship would suit the likes of you, with some cleaning up..."')
+            print('Press 1 to accept his offer and help depose his competition or press 2 to decline.')
+            town3 = int(input('What do you do?'))
+            if town3 == 1:
+                print(' ')
+                print('The mayor says "Good". ')
+            elif town3 == 2:
+                print(' ')
+            else:
+                print('Error')
+        elif town2 == 2:
+            print(' ')
+        else:
+            print('Error')
     elif town1 == 3:
         print(' ')
         print('Your attempt to fight the guards doesn\'t end well, seeing as you haven\'t had any food for the whole day. The guards take no nonsense. Being bayonetted is not a nice way to die.')
@@ -29,6 +51,7 @@ if direc == 1:
         print('GAME OVER')
     else:
         print('Error')
+#mountains dialogue starts
 elif direc == 2:
     print('You start walking to the east. You finally reach the mountains and start climbing up them. You find a cave entrance.')
     print(' ')
@@ -61,6 +84,7 @@ elif direc == 2:
         print('GAME OVER')
     else:
         print('Error')
+#cliff dialogue starts
 elif direc == 3:
     print('You start walking to the south. However, night falls before you are able to get to the cliff.')
     print(' ')
@@ -89,8 +113,24 @@ elif direc == 3:
             print('Error')
     else:
         print('Error')
+#road dialogue starts
 elif direc == 4:
-    print('This path is incomplete. Sorry.')
+    print(' ')
+    print('The road winds on and on. The monotony of walking takes its toll on you and you start to tire. Night falls. Day breaks. You\'re almost at the point of collapsing now, but in the distance you think you can see an oasis. You walk quicker toward it, all of your hope for survival relying on it. You reach it and touch the water. It\'s real! Press 1 to drink the water and 2 to deny it, however thirsty you may be.')
+    oasis1 = int(input('What do you do?'))
+    if oasis1 == 1:
+        print(' ')
+        print('The water from the oasis is better than any water you\'ve ever had. You tilt your head down to drink more, but the water seems to be receding. You crawl down, trying to catch another drink, but once you realize that you\'re tumbling down a sinkhole made of quicksand, it\'s too late to go back. You try to cry out, but your face is smothered by quicksand. You take an involuntary breath, and your lungs fill with sand.')
+        print(' ')
+        print('GAME OVER')
+    elif oasis1 == 2:
+        print(' ')
+        print('You aren\'t able to survive on sand. You keep walking on the road, but nothing appears. As your vision begins to fade from exhaustion and deprivation, you think you can see the road in front of you start to dissapear.')
+        print(' ')
+        print('GAME OVER')
+    else:
+        print('Error')
+#stationary dialogue starts
 elif direc == 5:
     print('You die of starvation and of exposure to the elements.')
     print(' ')
