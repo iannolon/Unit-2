@@ -35,13 +35,21 @@ if direc == 1:
             town3 = int(input('What do you do?'))
             if town3 == 1:
                 print(' ')
-                print('The mayor says "Good". ')
-            elif town3 == 2:
+                print('The mayor says "Good". You to sneak into the house of his competition at night and stab him in his sleep. However, climbing out of his window, you think that an old lady sees you. When the morning dawns, everybody knows that you were the one who killed him. You are hung by the crowd in the town square.')
                 print(' ')
+                print('GAME OVER')
+            elif town3 == 2:
+                print('The mayor becomes angry and you run out of his house. You go back to wandering the streets. You find a local hotel where you get some sleep and dinner. The next day, you have a talk with the owner of the hotel. He tells you that the mayor is a tyrant and that you were wise to decline his offer. He says that the mayor\'s opponent is a good man and that there\'s a movement to back up his campaign.')
+                print(' ')
+                print('To be continued...')
+                #This dialogue is not finished, but it will lead to a winning scenario eventually.
             else:
                 print('Error')
         elif town2 == 2:
+            print('You continue wandering the streets. You find a local hotel where you get some sleep and dinner. The next day, you have a talk with the owner of the hotel. He tells you that the mayor is a tyrant and that you were wise to not go to his house. He says that the mayor\'s opponent is a good man and that there\'s a movement to back up his campaign.')
             print(' ')
+            print('To be continued... ')
+            #This dialogue is not finished, but it will lead to a winning scenario eventually.
         else:
             print('Error')
     elif town1 == 3:
@@ -64,7 +72,9 @@ elif direc == 2:
         print('Press 1 to try to find out what it is, press 2 to spend the night in the cave without investigating the bump, or press 3 to leave the cave.')
         cave1 = int(input('What do you do?'))
         if cave1 == 1:
-            print('This path is incomplete. Sorry. ')
+            print(' ')
+            print('To be continued...')
+            #This dialogue is not finished, but it will lead to a winning scenario eventually.
         elif cave1 == 2:
             print(' ')
             print('Despite your curiosity, you sleep in the cave for the night. You wake to see a snarling tiger in front of you. He\'s not happy to find you in his home.')
